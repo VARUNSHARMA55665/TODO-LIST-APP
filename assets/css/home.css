@@ -1,0 +1,110 @@
+body {
+    background-color: lightslategray;
+    color: orange;
+    padding: 40px;
+}
+/* .radio-button {
+    position: absolute;
+    left: -30px;
+    top: 15px;
+    height: 15px; 
+    width: 15px;
+} */
+input {
+    outline: none;
+    border: none;
+    width: 100%;
+    margin-top: 5px;
+}
+
+/* textarea:focus, input:focus{
+    outline: none;
+} */
+
+.label-input {
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+#centering {
+    width: 70%;
+    margin: auto;
+    margin-bottom: 0px;
+    background-color: lightyellow;
+}
+
+#page-heading {
+    text-align: center;
+}
+
+.manage {
+    /* width: 100%; */
+}
+
+/* .aside {
+    text-align: end;
+}
+
+.aside-category {
+    display: inline-block;
+    padding: auto;
+    background-color:purple;
+    margin-right: 25px;
+    height: 45px;
+    width: 60px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 10px;
+    box-sizing: border-box;
+} */
+
+.category-setting {
+    position: relative;
+    padding-bottom: 15px;
+}
+
+.aside {
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    background-color:purple;
+    margin-right: 150px;
+    height: 45px;
+    width: 60px;
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+.description {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+#add-task-div{
+    text-align: center;
+    
+}
+#add-task {
+    display: inline-block;
+    background-color: cyan;
+    color:palevioletred;
+    height: 3rem;
+    width: 8rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.delete-btn {
+    position: absolute;
+    top: 20px;
+    right: 5px;
+    background-color: red;
+    color: white;
+}

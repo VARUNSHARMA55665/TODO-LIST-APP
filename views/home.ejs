@@ -1,0 +1,52 @@
+<html>
+    <head>
+        <title>
+            <%= title %>
+        </title>
+        <link rel = "stylesheet" href = "/css/home.css">
+    </head>
+    <body>
+        <div id = "centering">
+        <h1 id = "page-heading">TODO App</h1>
+
+
+        <form action = "create-form" method = "POST">
+          <div class = "label-input">
+            <div><label for = "description">Description</label></div>
+            <div><input type = "text" id = "description" name = "description" placeholder="What do you need to do" required></div>
+        </div>
+        <div class = "label-input">
+            <div><label for = "category">Category</label></div>
+            <div><input type = "text" id = "category" name = "category" placeholder="Choose a category" required></div>
+        </div>
+        <div class = "label-input">
+            <div><label for = "due_date">Due Date</label></div>
+            <div><input type = "date" id = "due_date" name = "due_date" placeholder="dd/mm/yyyy" required></div>
+        </div>
+            <div id = "add-task-div"><button type = "submit" id = "add-task">Add Task</button></div>
+        </form>
+
+
+        <ul>
+        <% for(let i = 0; i<todo_list.length; i++){%>
+            <hr>
+            <li class = "manage">
+                <div class = "category-setting">
+                <!-- <a href = "/delete-task?id=<%= todo_list[i]._id %>" ><div><input type = "radio" name = "routineTask" class = "radio-button" id = "remove"></div></a> -->
+                <!-- <div><input type = "radio" name = "routineTask" value = "tudo_list[i]._id" class = "radio-button" id = "i"></div> -->
+                <div class = "description"><%= todo_list[i].description %></div>
+                <!-- <div class = "aside"><span class = "aside-category"><%= todo_list[i].category %></span></div> -->
+                <div class = "aside"><%= todo_list[i].category %></div>
+                <div><%= todo_list[i].due_date %></div>
+                <div><a href = "/delete-task?id=<%= todo_list[i]._id %>"><button class = "delete-btn">Remove</button></a></div>
+            </div>
+            </li>
+            <% } %> 
+        </ul>
+
+    </div>
+
+    <!-- <div><button id = "delete-btn">Let's remove task</button></div> -->
+
+    </body>
+</html>
